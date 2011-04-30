@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MCM-Final ProjectTests' target in the 'MCM-Final ProjectTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
