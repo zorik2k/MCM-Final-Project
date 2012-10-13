@@ -1,25 +1,27 @@
 //
-//  MCM_Final_ProjectAppDelegate.m
-//  MCM-Final Project
+//  TestingStuffAppDelegate.m
+//  TestingStuff
 //
-//  Created by Zorik on 4/30/11.
+//  Created by Zorik on 5/14/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "MCM_Final_ProjectAppDelegate.h"
+#import "TestingStuffAppDelegate.h"
 
-@implementation MCM_Final_ProjectAppDelegate
+#import "TestingStuffViewController.h"
+
+@implementation TestingStuffAppDelegate
 
 
 @synthesize window=_window;
 
-@synthesize navigationController=_navigationController;
+@synthesize viewController=_viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    // Add the navigation controller's view to the window and display.
-    self.window.rootViewController = self.navigationController;
+     
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -66,7 +68,7 @@
 - (void)dealloc
 {
     [_window release];
-    [_navigationController release];
+    [_viewController release];
     [super dealloc];
 }
 
